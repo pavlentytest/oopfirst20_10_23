@@ -6,6 +6,18 @@ public class ECar extends Car {
         batteryCapacity = b;
     }
     public ECar() {
-        super();
+    }
+
+    @Override // аннотация
+    // переопределение
+    // override
+    public void doBeep() {
+        System.out.println("ECar beeped!");
+    }
+    public void doBeep(int a, int b) {
+
+    }
+    public void doBeep(int x) {
+
     }
 }

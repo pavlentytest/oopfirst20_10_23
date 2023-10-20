@@ -1,8 +1,10 @@
+
 public class Car {
     private String name;
     private int maxspeed;
 
     public String getName() {
+
         return name;
     }
 
@@ -26,5 +28,19 @@ public class Car {
     }
     public Car() {
         //name = "123123";
+    }
+
+    public void doBeep() {
+        System.out.println("Car beeped!");
+    }
+
+    // метод перегружен
+    // overload
+    public void doBeep(String message) {
+        System.out.println(message);
+    }
+
+    public void doBeep(int a) {
+        System.out.println("a="+a);
     }
 }
